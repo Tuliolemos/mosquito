@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
+    <title>Combata o mosquito</title>
+
+    <style>
+
+        @font-face {
+            font-family: TTNorms-Bold;
+            src: url(./fonts/TTNorms-Bold.otf);
+
+            font-family: TTNorms-Regular;
+            src: url(./fonts/TTNorms-Regular.otf);
+        }
+
+        body{
+            font-family: TTNorms-regular;
+            letter-spacing: 0.1px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container{
+            width: 100%;
+            height: auto;
+            margin: 0 auto;
+            
+        }
+
+        h3{
+            font-size: 28px;
+        }
+
+        .primeiro-bloco{
+            display: flex;
+            width: 100%;
+            height: 450px;
+            background-color: #488c95;
+            color: #ffdd00;
+            justify-content: center;
+        }
+
+        .primeiro-bloco img{
+            align-self: center;
+
+        }
+
+        .primeiro-bloco h1{
+            align-self: center;
+            font-size: 50px;
+            padding-left: 40px;
+        }
+
+        .segundo-bloco {
+            display: flex;
+            height: 750px;
+            color: #224b8c;
+            background-image: url(images/bgBox.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            padding: 0px 20%;
+        }
+
+        .segundo-bloco .box-texto {
+            background-color: #fff;
+            padding: 20px;
+            border: 8px solid;
+            border-radius: 20px;
+            align-self: center;
+            transform: skew(-20deg, 0deg);
+            padding-left: 50px;
+            margin-left: 60px;
+            min-width: 380px;
+        }
+
+        .segundo-bloco h1{
+            transform: skew(20deg, 0deg);
+        }
+
+        .terceiro-bloco {
+            width: 100%;
+            height: auto;
+            background-color: #488c95;
+            display: grid;
+            color: #fff;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+            padding-bottom: 50px;
+        }
+
+        .terceiro-bloco h3{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            text-align: center;
+        }
+
+        .terceiro-bloco h3{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            text-align: center;
+        }
+        
+        .terceiro-bloco h3 span{
+            color: #ffdd00;
+        }
+    
+        .terceiro-bloco iframe:nth-child(2){
+            grid-row-start: 2;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 4;
+            text-align: center;
+            width: 100%;
+            height: 500px;
+        }
+
+        .terceiro-bloco iframe:nth-child(3){
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            text-align: center;
+            width: 100%;
+            height: 280px;
+        }
+
+        .terceiro-bloco iframe:nth-child(4){
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            text-align: center;
+            width: 100%;
+            height: 280px;
+        }
+
+        .quarto-bloco {
+            display: flex;
+            color: #fff;
+            background-image: url(images/bgBox.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 100px 0% 0 0%;
+            justify-content: center;
+        }
+
+        .quarto-bloco .box-texto {
+            background-color: #224b8c;
+            padding: 20px;
+            border: 8px solid #224b8c;
+            border-radius: 20px;
+            align-self: center;
+            transform: skew(-20deg, 0deg);
+            padding-left: 50px;
+            margin: 0 20px;
+            max-width: 390px;
+        }
+
+        .quarto-bloco h2{
+            transform: skew(20deg, 0deg);
+        }
+
+        .quarto-bloco h2 span{
+            color: #ffdd00;
+        }
+
+
+        .quinto-bloco{
+            text-align: center;
+            color: #224b8c;
+            background-color: #fff;
+            width: 60%;
+            margin: 0 auto;
+        }
+
+        .quinto-bloco a {
+            width: fit-content;
+            background-color: #224b8c;
+            color: #fff;
+            padding: 20px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: TTNorms-Regular;
+            margin: 40px auto;
+            display: block;
+        }
+
+        .quinto-bloco a span img{
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .boxSlider{
+            width: 250px;
+            height: 250px;
+            border: solid 5px #9d9d9c;
+            background-color: #ededed;
+            border-radius: 20px;
+            margin: 0 auto;
+            text-align: center;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .boxSlider img{
+            height: 80%;
+            max-width: 70%;
+        }
+
+        .quinto-bloco .slider h4{
+            color: black;
+            font-family: TTNorms-Regular;
+        }
+
+        .sexto-bloco {
+            width: 100%;
+            height: auto;
+            background-color: #488c95;
+            display: grid;
+            color: #fff;
+            justify-content: center;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 20px;
+            padding-bottom: 50px;
+        }
+
+        .sexto-bloco h3{
+            grid-column-start: 2;
+            grid-column-end: 5;
+            text-align: center;
+        }
+
+        .sexto-bloco a:nth-child(3){
+            grid-column-start: 2;
+        }
+
+        .sexto-bloco a:nth-child(6){
+            grid-column-start: 2;
+        }
+
+        #footer-brasil {
+            background: none repeat scroll 0% 0% #0042b1;
+            padding: 1em 0px;
+            max-width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div id="barra-brasil" style="background:#7F7F7F; height: 20px; padding:0 0 0 10px;display:block;">
+        <ul id="menu-barra-temp" style="list-style:none;">
+           <li style="display:inline; float:left;padding-right:10px; margin-right:10px; border-right:1px solid #EDEDED"> <a href="http://brasil.gov.br" style="font-family:sans,sans-serif; text-decoration:none; color:white;">Portal do Governo Brasileiro</a> </li>
+        </ul>
+     </div>
+
+     
+    <div class="container">
+        <div class="primeiro-bloco">
+            <img src="images/logoCampanha.png" alt="">
+            <h1 class="titulo">#CombataOMosquito</h1>
+        </div>
+
+        <div class="segundo-bloco">
+            <img src="images/personagemNegro.png" alt="">
+            <div class="box-texto">
+                <h1>Combater o mosquito é com você, comigo, com todo mundo.</h1>
+            </div>
+        </div>
+
+        <div class="terceiro-bloco">
+            <h3>Assista aos vídeos da campanha e veja como <span>combater o mosquito:</span></h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/twUfq_EH4_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/twUfq_EH4_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/twUfq_EH4_c" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <div class="quarto-bloco">
+            <img src="images/personagemMulher.png" alt="">
+            <div class="box-texto">
+                <h2>Cuide dos locais que podem acumular água todos os dias. Vamos eliminar os criadouros.</br>
+                    <span>Faça a sua parte.</span>
+                </h2>
+            </div>
+            <img src="images/personagemServidor.png" alt="">
+        </div>
+
+        <div class="quinto-bloco">
+            <h3>Estes são alguns dos principais criadouros do mosquito:</h3>
+            <div class="slider">
+                <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button>
+                <div>
+                    <div class="boxSlider">
+                        <img src="images/vaso.svg" alt="">
+                    </div>
+                    <h4>Encha os pratos de vasos<br>
+                        de plantas com areia </h4>
+                </div>
+
+                <div>
+                    <div class="boxSlider">
+                        <img src="images/pneu.svg" alt="">
+                    </div>
+                    <h4>Mantenha a lixeira</br>
+                        bem fechada e descarte</br>
+                       o lixo corretamente</h4>
+                </div>
+
+                <div>
+                    <div class="boxSlider">
+                        <img src="images/lixo.svg" alt="">
+                    </div>
+                    <h4>Encha os pratos de vasos<br>
+                        de plantas com areia </h4>
+                </div>
+  
+              </div>
+            <a href="#"> <span><img src="images/icon-download.svg" alt=""></span> Clique aqui e baixe os materiais da campanha</a>
+        </div>
+
+        <div class="sexto-bloco">
+            <h3>Siga o Ministério da Saúde nas redes sociais</h3>
+            <a href=""><img src="images/disque-saude.svg" alt="" target="_blanck"></a>
+            <a href="https://www.facebook.com/minsaude"><img src="images/facebook.svg" alt="" target="_blanck"></a>
+            <a href="https://twitter.com/minsaude"><img src="images/twitter.svg" alt="" target="_blanck"></a>
+            <a href="https://www.youtube.com/user/MinSaudeBR"><img src="images/youtube.svg" alt="" target="_blanck"></a>
+            <a href="https://www.instagram.com/minsaude/"><img src="images/intagram.svg" alt="" target="_blanck"></a>
+            <a href="https://pt.linkedin.com/company/ministeriodasaude"><img src="images/linkedin.svg" alt="" target="_blanck"></a>
+            <a href=""><img src="images/hashtag.svg" alt=""></a>
+        </div>
+    </div>
+
+    <div id="footer-brasil"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+       $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: true,
+            autoplay: false,
+            autoplaySpeed: 2000,
+            prevArrow: 'Previous',
+            nextArrow: 'Next',
+        });
+    </script>
+    <script defer="defer" src="https://barra.brasil.gov.br/barra_2.0.js" type="text/javascript"></script>
+
+</body>
+</html>
